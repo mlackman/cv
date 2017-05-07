@@ -1,21 +1,66 @@
-div, p, h1, h2 {
+body, main, div, p, h1, h2, section, article {
   padding: 0;
   margin: 0;
 }
 
-.left {
-  width: 20%;
-  float: left;
+main {
+  padding: 2em 2em;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: large;
+  font-weight: 500;
+  color: #585858;
+  background-color: #f3f3f3;
+  display: grid;
+  grid-template-columns:
+    /* 1 */ 30%
+    /* 2 */ 1fr;
 }
 
-section {
-  display: inline-block;
-  width: 100%;
+h1, h2 {
+  color: #1d7d74;
+  letter-spacing: 2px;
 }
 
-.right {
-  width: 75%;
-  float: right;
+.left-cell > h1, .left-cell > h2 {
+  color: #636363;
+  letter-spacing: 0px;
 }
+
+#about-me {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#about-me > h1 {
+  font-size: 50px;
+  margin-bottom: 1em;
+}
+
+#experience-title {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.section-start-title {
+  margin-top: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+#experience {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.left-cell {
+  margin-bottom: 1em;
+  font-size: small;
+  grid-column: 1;
+}
+
+.right-cell {
+  margin-bottom: 1em;
+  grid-column: 2;
+}
+
 
 
