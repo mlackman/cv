@@ -1,4 +1,4 @@
-body, main, div, p, h1, h2, section, article {
+body, main, div, p, h1, h2, section, article, a {
   padding: 0;
   margin: 0;
 }
@@ -21,12 +21,17 @@ h1, h2 {
   letter-spacing: 2px;
 }
 
-.left-cell > h1, .left-cell > h2 {
+.left-cell > h1, .left-cell > h2, a {
   color: #636363;
   letter-spacing: 0px;
 }
 
+#contact-info article {
+  margin-bottom: 1em;
+}
+
 #about-me {
+  margin-bottom: 2.5em;
   grid-column: 2;
   grid-row: 1;
 }
@@ -42,7 +47,6 @@ h1, h2 {
 }
 
 .section-start-title {
-  margin-top: 2.5em;
   margin-bottom: 0.5em;
 }
 
@@ -52,13 +56,13 @@ h1, h2 {
 }
 
 .left-cell {
-  margin-bottom: 1em;
+  margin-bottom: 2.5em;
   font-size: small;
   grid-column: 1;
 }
 
 .right-cell {
-  margin-bottom: 1em;
+  margin-bottom: 2.5em;
   grid-column: 2;
 }
 
